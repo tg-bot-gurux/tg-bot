@@ -3,7 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 import { TelegrafModule } from 'nestjs-telegraf';
 import { BotModule } from './bot/bot.module';
 import { SequelizeModule } from '@nestjs/sequelize';
+<<<<<<< HEAD
 import { UserModule } from './user/user.module';
+=======
+import { CountryModule } from './countries/country.module';
+>>>>>>> 94f050e434fbb5433335b5ca0f5bc0a13901e2ae
 
 @Module({
   imports: [
@@ -27,8 +31,13 @@ import { UserModule } from './user/user.module';
       autoLoadModels: true,
       logging: false
     }),
+<<<<<<< HEAD
     UserModule,
     BotModule,
+=======
+
+    BotModule, CountryModule
+>>>>>>> 94f050e434fbb5433335b5ca0f5bc0a13901e2ae
   ],
 })
 export class AppModule {}

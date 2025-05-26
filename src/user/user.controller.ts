@@ -10,19 +10,19 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Get()
-  @ApiOperation({ summary: 'Barcha foydalanuvchilarni olish' })
+  @ApiOperation({ summary: 'get all users' })
   getAll() {
     return this.userService.getAll();
   }
 
   @Post()
-  @ApiOperation({ summary: 'Yangi foydalanuvchi yaratish' })
+  @ApiOperation({ summary: 'create user' })
   create(@Body() payload: CreateUserDto) {
     return this.userService.create(payload);
   }
 
   @Put(':id')
-  @ApiOperation({ summary: 'Foydalanuvchini yangilash' })
+  @ApiOperation({ summary: 'update user' })
   update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
     return this.userService.update(Number(id), dto);
   }
