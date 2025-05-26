@@ -8,11 +8,11 @@ export class CreateCountryDto {
     name: { common: string; official?: string }
 
     @ApiProperty({
-        example: ['Tashkent'],
-        description: 'Capital cities (array of strings)',
+        example: 'Tashkent',
+        description: 'Capital cities',
         required: false,
     })
-    capital?: string[]
+    capital?: string
 
     @ApiProperty({
         example: 'Asia',
