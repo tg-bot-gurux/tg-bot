@@ -17,8 +17,8 @@ export class UserController {
 
   @Post()
   @ApiOperation({ summary: 'Yangi foydalanuvchi yaratish' })
-  create(@Body() dto: CreateUserDto) {
-    return this.userService.create(dto);
+  create(@Body() payload: CreateUserDto) {
+    return this.userService.create(payload);
   }
 
   @Put(':id')
