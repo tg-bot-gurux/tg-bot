@@ -10,11 +10,11 @@ export class CountryService {
         private readonly countryModel: typeof CountryModel
     ) { }
 
-    async create(dto: CreateCountryDto): Promise<CountryModel> {
+    async create(dto: CreateCountryDto) {
         return this.countryModel.create(dto as any);
     }
 
-    async findAll(): Promise<CountryModel[]> {
+    async findAll() {
         return this.countryModel.findAll();
     }
 }

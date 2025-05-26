@@ -3,11 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 import { TelegrafModule } from 'nestjs-telegraf';
 import { BotModule } from './bot/bot.module';
 import { SequelizeModule } from '@nestjs/sequelize';
-<<<<<<< HEAD
 import { UserModule } from './user/user.module';
-=======
 import { CountryModule } from './countries/country.module';
->>>>>>> 94f050e434fbb5433335b5ca0f5bc0a13901e2ae
+import { User } from './user/model/user.model';
+import { CountryModel } from './countries/models/country.model';
+
 
 @Module({
   imports: [
@@ -27,17 +27,15 @@ import { CountryModule } from './countries/country.module';
       username: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      models: [],
+      models: [User, CountryModel],
       autoLoadModels: true,
       logging: false
     }),
-<<<<<<< HEAD
-    UserModule,
-    BotModule,
-=======
 
+    UserModule,
     BotModule, CountryModule
->>>>>>> 94f050e434fbb5433335b5ca0f5bc0a13901e2ae
+
+
   ],
 })
 export class AppModule {}

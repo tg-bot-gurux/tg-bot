@@ -17,11 +17,7 @@ async function bootstrap() {
   const port = process.env.APP_PORT ? parseInt(process.env.APP_PORT) : 4000
 
   await app.listen(port, () => {
-<<<<<<< HEAD
     console.log(`Server running on port ${port} ✅`)
-=======
-    console.log(`server running on port ${port} ✅`)
->>>>>>> 94f050e434fbb5433335b5ca0f5bc0a13901e2ae
   });
 }
 bootstrap();
