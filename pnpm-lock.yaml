@@ -50,12 +50,18 @@ importers:
       rxjs:
         specifier: ^7.8.1
         version: 7.8.2
+<<<<<<< HEAD
+      sequelize-typescript:
+        specifier: ^2.1.6
+        version: 2.1.6(@types/node@22.15.21)(@types/validator@13.15.1)(reflect-metadata@0.2.2)(sequelize@6.37.7)
+=======
       sequelize:
         specifier: ^6.37.7
         version: 6.37.7(pg@8.16.0)
       sequelize-typescript:
         specifier: ^2.1.6
         version: 2.1.6(@types/node@22.15.21)(@types/validator@13.15.1)(reflect-metadata@0.2.2)(sequelize@6.37.7(pg@8.16.0))
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
       telegraf:
         specifier: ^4.16.3
         version: 4.16.3
@@ -2910,6 +2916,11 @@ packages:
   pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
 
+<<<<<<< HEAD
+  pg-connection-string@2.9.0:
+    resolution: {integrity: sha512-P2DEBKuvh5RClafLngkAuGe9OUlFV7ebu8w1kmaaOgPcpJd1RIFh7otETfI6hAR8YupOLFTY7nuvvIn7PLciUQ==}
+
+=======
   pg-cloudflare@1.2.5:
     resolution: {integrity: sha512-OOX22Vt0vOSRrdoUPKJ8Wi2OpE/o/h9T8X1s4qSkCedbNah9ei2W2765be8iMVxQUsvgT7zIAT2eIa9fs5+vtg==}
 
@@ -2944,6 +2955,7 @@ packages:
   pgpass@1.0.5:
     resolution: {integrity: sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug==}
 
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -6876,6 +6888,10 @@ snapshots:
 
   pend@1.2.0: {}
 
+<<<<<<< HEAD
+  pg-connection-string@2.9.0: {}
+
+=======
   pg-cloudflare@1.2.5:
     optional: true
 
@@ -6911,6 +6927,7 @@ snapshots:
     dependencies:
       split2: 4.2.0
 
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
@@ -7130,15 +7147,25 @@ snapshots:
 
   sequelize-pool@7.1.0: {}
 
+<<<<<<< HEAD
+  sequelize-typescript@2.1.6(@types/node@22.15.21)(@types/validator@13.15.1)(reflect-metadata@0.2.2)(sequelize@6.37.7):
+=======
   sequelize-typescript@2.1.6(@types/node@22.15.21)(@types/validator@13.15.1)(reflect-metadata@0.2.2)(sequelize@6.37.7(pg@8.16.0)):
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
     dependencies:
       '@types/node': 22.15.21
       '@types/validator': 13.15.1
       glob: 7.2.0
       reflect-metadata: 0.2.2
+<<<<<<< HEAD
+      sequelize: 6.37.7
+
+  sequelize@6.37.7:
+=======
       sequelize: 6.37.7(pg@8.16.0)
 
   sequelize@6.37.7(pg@8.16.0):
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
     dependencies:
       '@types/debug': 4.1.12
       '@types/validator': 13.15.1
@@ -7156,8 +7183,11 @@ snapshots:
       uuid: 8.3.2
       validator: 13.15.0
       wkx: 0.5.0
+<<<<<<< HEAD
+=======
     optionalDependencies:
       pg: 8.16.0
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
     transitivePeerDependencies:
       - supports-color
 

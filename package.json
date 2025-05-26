@@ -34,7 +34,10 @@
     "pg": "^8.16.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
+<<<<<<< HEAD
+=======
     "sequelize": "^6.37.7",
+>>>>>>> 0aada84103eeadbf9cfa3d42a3a810d4d576b211
     "sequelize-typescript": "^2.1.6",
     "telegraf": "^4.16.3"
   },
