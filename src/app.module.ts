@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TelegrafModule } from 'nestjs-telegraf';
 import { BotModule } from './bot/bot.module';
 import { SequelizeModule } from '@nestjs/sequelize';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -26,7 +27,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
       autoLoadModels: true,
       logging: false
     }),
-
+    UserModule,
     BotModule,
   ],
 })
