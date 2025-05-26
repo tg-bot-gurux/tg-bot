@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TelegrafModule } from 'nestjs-telegraf';
 import { BotModule } from './bot/bot.module';
 import { SequelizeModule } from '@nestjs/sequelize';
+import { CountryModule } from './countries/country.module';
 
 @Module({
   imports: [
@@ -27,7 +28,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
       logging: false
     }),
 
-    BotModule,
+    BotModule, CountryModule
   ],
 })
 export class AppModule {}
